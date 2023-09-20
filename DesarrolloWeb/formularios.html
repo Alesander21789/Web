@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title>Formularios y campos</title>
+  </head>
+  <body>
+    <h2>Creando los formularios</h2>
+    <form class="formulario">
+      <fieldset>
+        <legend>Datos Personales</legend>
+        <br />
+        <label for="nombre">Nombre</label>
+        <input
+          type="text"
+          name="Nombre"
+          id="nombre"
+          placeholder="Escribe tu nombre"
+          autocomplete="on"
+        />
+        <br />
+        <br />
+        <label for="apellido">Apelido</label>
+        <input
+          type="text"
+          name="Apellido"
+          id="apellido"
+          placeholder="Escribe tu apellido"
+          autocomplete="on"
+        />
+        <br />
+        <br />
+        <label for="sexo">Sexo</label>
+        <br />
+
+        <input type="radio" id="sexo" name="sexo" value="hombre" />Hombre<br />
+        <input type="radio" id="sexo" name="sexo" value="mujer" />Mujer<br />
+        <input
+          type="radio"
+          id="sexo"
+          name="sexo"
+          value="otro"
+          checked
+          autofocus
+        />Otro<br />
+        <br>
+        <label>Fecah de nacimiento</label>
+        <input type="date">
+        <br>
+        <input type="datetime-local">
+        <br>
+        <input type="datetime-local" name="fecha">
+        <br><br>
+        <label for="correo">Correo Electronico</label>
+        <input type="email" placeholder="correo@email.com" id="correo">
+        <br><br>
+        <label for="dominio">Tu sitio web</label>
+        <input type="url" placeholder="www.example.es" id="dominio">
+        <br><br>
+        <label for="html">Cuanto sabes de html ????</label>
+        <input type="range" id="html" name="html" min="0" max="10">
+        <br><br>
+        <label for="numero">Personas que conoces en este sitio web ????</label>
+        <input type="number" id="numero" name="numero" min="1" max="5">
+    
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Información sobre tu curso</legend>
+        <label for="turno">Turnos</label>
+        <select class="turno" name="turno" id="turno">
+          <option value="matutino">Matutino</option>
+          <option value="nocturno">Nocturno</option>
+          <option value="vespertino" selected>Vespertino</option>
+        </select>
+        <br /><br />
+        <label for="encuesta">Que curso te gustaría que agregaramos ?</label>
+        <input list="propuesta" name="encuesta" id=encuesta">
+        <datalist id="propuesta">
+          <option value="PHP">
+          <option value="MYSQL">
+          <option value="jquery">
+          <option value="Angular" >
+      </fieldset>
+      <br />
+      <br />
+      <fieldset>
+        <legend>Elige el/los curso/os que te apuntaras</legend>
+      <label for="cursos">Elige tus cursos</label>
+      <br>
+      <input type="checkbox" id="cursos" value"php">PHP<br>
+      <input type="checkbox" id="cursos" value"mysql">MYSQL<br>
+      <input type="checkbox" id="cursos" value"jquery">JQUERY<br>
+      <input type="checkbox" id="cursos" value"angular">Angular<br>
+      <input type="checkbox" id="cursos" value"html5">HTML5<br>
+      <input type="checkbox" id="cursos" value"css3">CSS3<br>
+      <input type="checkbox" id="cursos" value"javascript">JavasScript<br>
+      <br>
+  <label >Elige la fecha de inicio del curso</label>
+  <input type="month">
+  <br>
+  <input type="week">
+  <br>
+  <input type="time">
+</fieldset>
+<br><br>
+<fieldset>
+    <legend>Extra</legend>
+    <label for="color">Las primeras diez personas elegien una camisa gratis, elige el color</label>
+    <input type="color" id="color">
+</fieldset>
+<br>
+<fieldset>
+    <legend>Usuario y contraseña
+      
+    </legend>
+    <label for="usuario">Usuario</label>
+    <input type="text" id="usuario">
+    <br>
+    <label for="password">Password</label>
+    <input type="password" id="password">
+</fieldset>
+<br>
+<button type="reset">Borrar</button>
+      <input type="submit" value="Enviar" />
+      <button type="submit" disabled>Enviar</button>
+    </form>
+  </body>
+</html>

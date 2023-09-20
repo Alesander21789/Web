@@ -1,0 +1,160 @@
+
+/** BACKGROUNDS**/
+
+body {
+  background: gray;
+}
+div.contenedor {
+  background: white;
+}
+header {
+  background: orange;
+  height: 20vh;
+}
+nav {
+  background: purple;
+}
+table {
+  background: cyan;
+}
+footer {
+  background: orange;
+}
+footer nav {
+  background: transparent;
+}
+/** Anchos y Altos **/
+.contenedor {
+  width: 1000px;
+}
+nav {
+  height:80px;
+}
+table {
+  width:300px;
+}
+img.logocss3 {
+  width: 90px;
+}
+table {
+  width: 40%;
+}
+/*header {
+  height: 20vh;
+  width: 20vw;
+}*/
+/** Margenes **/
+
+/* Con auto centro */
+div.contenedor {
+
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  margin: 20px auto 0 auto;
+
+}
+
+header {
+
+  margin-bottom: 30px;
+
+}
+
+h2 {
+
+margin-bottom: 40px;
+
+}
+
+table {
+
+  margin-left: 20%;
+}
+
+footer {
+
+margin-top: 30px;
+
+}
+
+section#cursos {
+
+width: 400px;
+background: orange;
+border: 5px solid black;
+
+}
+
+
+
+/** Padding **/
+
+nav {
+
+padding-top: 20px;
+
+}
+
+header {
+
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+
+}
+
+tbody tr td {
+
+padding-top: 5px;
+padding-bottom: 5px;
+
+}
+
+nav ul {
+
+  padding: 0px;
+}
+
+footer {
+
+  padding-top: 40px;
+
+}
+
+div {
+
+  overflow: hidden;
+  
+}
+
+/** Floats **/
+
+section#cursos {
+
+  float: right;
+  
+  }
+
+  main {
+
+    width: 700px;
+    float: left;
+
+  }
+  aside {
+
+    width: 300px;
+    float: right;
+  }
+
+  .clearfix:before,
+  .clearfix:after {
+content: '';
+display: table;
+
+
+  }
+  .clearfix:after {
+    clear: both;
+  }

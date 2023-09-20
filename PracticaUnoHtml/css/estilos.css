@@ -1,0 +1,220 @@
+/** Esta instrucción establece el tamaño de la página en box-sizing, es decir, define cómo se calculan las medidas de los elementos en la página. En este caso, se establece en "border-box", lo que significa que el ancho y alto de los elementos incluyen el borde y el padding, en lugar de solo el contenido.**/
+
+html {
+    box-sizing: border-box;
+  }
+  /** Esta instrucción hace que todos los elementos de la página hereden el valor de box-sizing establecido en la instrucción anterior. De esta forma, todos los elementos tendrán el mismo tamaño y se calculará de la misma manera. **/
+  *, *:before, *:after {
+    box-sizing: inherit;
+  }
+  /** Esta instrucción elimina el margen y el padding de todos los elementos de la página. Esto significa que no habrá espacio vacío entre los elementos y el contenido se colocará directamente en la esquina superior izquierda de cada elemento. **/
+  * {
+    margin:0;
+    padding:0;
+  }
+  /** Esta instrucción establece la fuente de la página. En este caso, se establece en "verdana, geneva, serif", lo que significa que la página utilizará la fuente Verdana, Geneva o una fuente serif en caso de que las anteriores no estén disponibles. **/
+  body {
+    font-family: verdana, geneva, serif;
+  }
+  
+  
+  header {
+    padding: 20px 0;
+  }
+  
+  div.contenedor,
+  div.contenido {
+    width: 1200px;
+    margin: 0 auto;
+  }
+  
+  /** Navegacion **/
+  /** Esta instrucción establece el color de fondo de la navegación. En este caso, se establece en "#db008d", lo que significa que la navegación tendrá un fondo de color gris oscuro. **/
+  .navegacion{
+    background-color: #db008d;
+  }
+  /** Esta instrucción establece las propiedades de la navegación. En este caso, se establece el ancho en 1200 px, el margen en cero y la posición en "relative". Esto significa que la navegación tendrá un ancho fijo de 1200 px, no tendrá espacio vacío alrededor y se posicionará en relación a su contenedor. **/
+  nav {
+    width: 1200px;
+    margin:0 auto;
+    position: relative;
+  }
+  /** Esta instrucción elimina el estilo de la lista de la navegación. En este caso, se elimina el estilo predeterminado de la lista y se establece en ninguno. **/
+  nav ul {
+    list-style: none;
+  }
+  /** Esta instrucción establece que los elementos de la lista de la navegación flotan a la izquierda. Esto significa que los elementos de la lista se colocarán uno al lado del otro, de manera horizontal. **/
+  nav > ul > li {
+    float: left;
+  }
+  /** Esta instrucción crea un elemento vacío después de la lista de la navegación. El contenido se establece en vacío, la exhibición se establece en "bloque" y el "clear" se establece en "ambos". Esto significa que el elemento vacío ocupará todo el ancho disponible y se colocará debajo de la lista de la navegación, deixando espacio para el contenido que sigue. **/
+  nav ul::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  
+  nav ul li a {
+    display: inline-block;
+    color: #ffffff;
+    padding: 20px 20px;
+    text-decoration: none;
+    width: 200px;
+    text-align: center;
+  }
+  
+  
+  nav ul li a:hover {
+    background-color: #00b8e4;
+  }
+  
+  /* SEgundo nivel **/
+  
+  nav ul ul {
+    position: absolute;
+    top:100%;
+    background-color: rgba(0,184,228, .7);
+    display: none;
+  }
+  nav ul li:hover > ul {
+    display: block;
+  }
+  nav ul li:hover {
+    background-color: rgba(0,184,228, .7);
+  }
+  
+  /** Contenido Principal**/
+  div.contenido::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  main {
+    width: 70%;
+    float: left;
+    padding-right: 40px;
+  }
+  aside {
+    float: right;
+    width: 30%;
+  }
+  /* entradas **/
+  article {
+      margin-top: 30px;
+  }
+  h2 {
+      color: #00b8e4;
+      margin-bottom: 20px;
+  }
+  article::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  article img {
+      float: left;
+      width: 300px;
+      margin-right: 30px;
+  }
+  article p {
+      line-height: 2;
+      text-align: justify;
+  }
+  .boton {
+      background-color: #00b8e4;
+      padding: 10px 30px;
+      text-align: center;
+      display: inline-block;
+      color: #ffffff;
+      text-decoration: none;
+      text-transform: uppercase;
+      margin-top: 10px;
+  }
+  
+  /** Aside **/
+  aside {
+    margin-top: 30px;
+  }
+  aside ul {
+    list-style: none;
+  }
+  aside ul li {
+      padding: 10px 0 10px 10px;
+  
+  }
+  aside ul li:hover {
+    background-color: #00b8e4;
+  
+  }
+  aside ul li a {
+      color: #00b8e4;
+      padding: 10px 0;
+      text-decoration: none;
+  }
+  aside ul li:hover a {
+    color: #ffffff;
+  }
+  /** Footer **/
+  footer {
+    background-color: #db008d;
+    padding-top: 40px;
+    margin-top:30px;
+  }
+  
+  footer h2 {
+      color: white;
+  }
+  footer .contenedor::after {
+    content: '';
+    display: block;
+    clear: both;
+  }
+  footer .nosotros {
+    float: left;
+    width: 30%;
+    color: white;
+  }
+  footer .menu {
+      float: right;
+      width: 40%;
+      text-align: right;
+  }
+  footer nav {
+    width: auto;
+  }
+  footer nav a {
+    color: white;
+    text-decoration: none;
+  }
+  p.copyright {
+      padding: 20px 0;
+      text-align: center;
+      color: white;
+  }
+  
+
+/**
+En CSS, los dos puntos simples (`:`) y los dos puntos dobles (`::`) se utilizan para diferentes propósitos y tienen significados distintos:
+
+1. Selector de Pseudo-clase (`:`):
+   - El selector de pseudo-clase (`:`) se utiliza para seleccionar y aplicar estilos a elementos HTML basados en su estado o interacción del usuario.
+   - Se utiliza para seleccionar elementos en función de eventos como `:hover` (cuando el mouse está sobre el elemento), `:active` (cuando se hace clic en el elemento), `:focus` (cuando el elemento recibe el enfoque) y otras interacciones.
+   - Ejemplo:
+     ```css
+     a:hover {
+       color: red;
+     }
+     ```
+
+2. Selector de Pseudo-elemento (`::`):
+   - El selector de pseudo-elemento (`::`) se utiliza para seleccionar y aplicar estilos a partes específicas de un elemento HTML que no son elementos reales del DOM. Estos pseudo-elementos representan partes generadas por el navegador, como el contenido antes o después de un elemento, o la primera línea de un elemento de texto.
+   - Se utiliza para estilizar partes específicas de un elemento sin necesidad de agregar elementos HTML adicionales al documento.
+   - Ejemplo:
+     ```css
+     p::first-line {
+       font-weight: bold;
+     }
+     ```
+
+En resumen, la diferencia principal entre `:` y `::` en CSS es que `:` se utiliza para pseudo-clases y `::` se utiliza para pseudo-elementos. Las pseudo-clases se aplican a elementos completos en función de su estado o interacción, mientras que los pseudo-elementos se utilizan para estilizar partes específicas de un elemento.
+*

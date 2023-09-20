@@ -1,0 +1,262 @@
+h2 {
+
+    color: blue;
+    text-transform: uppercase;
+    background-color: red;
+    padding: 20px;
+
+}
+#parrafo {
+
+    font-size: 20px;
+
+}
+
+.principal {
+
+    color: red;
+
+}
+
+/* Selectores con clase e id */
+
+#principal.principal {
+
+    font-size: 60px;
+
+}
+
+/* Usar dos clases */
+
+.parrafo.parrafo {
+
+    font-size: 60px;
+
+}
+
+
+/* Seleccionar elmentos html */
+
+h2 {
+
+    color: blue;
+    text-transform: uppercase;
+    background-color: red;
+    padding: 20px;
+
+}
+
+/* Seleccionado html e ID */
+
+img#logo {
+
+    padding: 20px;
+
+}
+
+/* Selecciona html y clases */
+
+img.logo {
+
+
+    padding: 20px;
+
+}
+
+/* Selector universal */
+
+* {
+
+    color: red!important;
+    font-size: 20px;
+
+}
+
+/* Selector de atributos */
+
+a[href="https://www.google.com"] {
+
+    color: blue;
+
+}
+
+/* Selector de atributos con un valor */
+
+/* Empiezan por ejemplo */
+a[href^="http://www.example.com"] {
+
+
+
+}
+
+
+a[href*="ejemplo"] {
+
+
+}
+
+/**
+El selector de atributos con un valor coincide con los elementos que tienen un atributo con un valor específico. La sintaxis es la siguiente:
+
+```
+[atributo^="valor"]
+```
+
+Por ejemplo, el siguiente selector coincidirá con todos los enlaces que comienzan con "http://www.example.com":
+
+```
+a[href^="http://www.example.com"]
+```
+
+También puedes utilizar el selector de atributos con un valor para coincidir con los elementos que tienen un atributo que contiene un valor específico. La sintaxis es la siguiente:
+
+```
+[atributo*="valor"]
+```
+
+Por ejemplo, el siguiente selector coincidirá con todos los enlaces que contienen la palabra "ejemplo":
+
+```
+a[href*="ejemplo"]
+```
+
+También puedes utilizar el selector de atributos con un valor para coincidir con los elementos que tienen un atributo que termina con un valor específico. La sintaxis es la siguiente:
+
+```
+[atributo$="valor"]
+```
+
+Por ejemplo, el siguiente selector coincidirá con todos los enlaces que terminan con ".html":
+
+```
+a[href$=".html"]
+```
+
+También puedes utilizar el selector de atributos con un valor para coincidir con los elementos que tienen un atributo que no tiene ningún valor. La sintaxis es la siguiente:
+
+```
+[atributo]
+```
+
+Por ejemplo, el siguiente selector coincidirá con todos los enlaces que tienen un atributo href, independientemente del valor del atributo:
+
+```
+a[href]
+```
+*/
+
+/* Selector de grupos */
+
+h2, h3, p, a {
+
+    text-transform: uppercase;
+    color: blue!important;
+
+}
+
+
+
+h1 {
+
+    color: red;
+
+}
+
+h2 {
+
+    color: blue;
+
+}
+
+h3 {
+
+    color: green;
+
+}
+
+h2, h3 {
+
+    text-align: center;
+
+}
+
+/* Seleccionar descendientes selector */
+
+nav#navegacion {
+
+background-color: aliceblue;
+
+}
+
+nav#navegacion ul {
+
+    background-color:blueviolet;
+    
+    }
+    
+
+    /**
+    Claro, aquí tienes algunos ejemplos de cómo seleccionar descendientes en CSS:
+
+* Para seleccionar todos los elementos `<p>` que son descendientes de un elemento `<div>`, puedes utilizar el siguiente selector:
+
+```
+div p {
+  color: red;
+}
+```
+
+* Para seleccionar todos los elementos `<li>` que son descendientes de un elemento `<ul>`, puedes utilizar el siguiente selector:
+
+```
+ul li {
+  color: blue;
+}
+```
+
+* Para seleccionar todos los elementos `<a>` que son descendientes de un elemento `<nav>`, puedes utilizar el siguiente selector:
+
+```
+nav a {
+  color: green;
+}
+```
+
+También puedes utilizar el selector de descendientes para seleccionar elementos que están anidados a varios niveles de profundidad. Por ejemplo, para seleccionar todos los elementos `<p>` que son descendientes de un elemento `<div>` que es descendiente de un elemento `<body>`, puedes utilizar el siguiente selector:
+
+```
+body div p {
+  color: red;
+}
+```
+
+El selector de descendientes es una herramienta muy poderosa que se puede utilizar para seleccionar elementos en función de su relación con otros elementos en el DOM.
+*/
+
+
+/** Selector con hijos */
+
+section#cursos > ul {
+
+    border: 1px solid black;
+}
+
+/** Seleccionar adyacente */
+
+ul#listado-cursos + p {
+
+    background-color: aliceblue!important;
+}
+
+/** Selectores para atributos */
+
+img[id="logo"]{
+
+
+    background-color: brown;
+}
+
+[class="seccion"] {
+
+     border: 0cap;
+}

@@ -1,0 +1,163 @@
+/* Establece la altura del elemento html al 100% y utiliza el modelo de caja border-box */
+
+html {
+    height: 100%;
+    box-sizing: border-box;
+}
+/* Establece el modelo de caja heredado para todos los elementos y sus pseudo-elementos */
+*, *:before, *:after{
+
+box-sizing: inherit;
+
+}
+/* Establece el estilo para el cuerpo del documento */
+
+body {
+        /* Establece la altura del cuerpo al 100% */
+    height: 100%;
+        /* Define la fuente a utilizar */
+    font-family: arial,helvetica, sans-serif;
+       /* Establece la altura del cuerpo al 100% */
+    height: 100%;
+        /* Elimina el margen predeterminado */
+    margin: 0;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#e570e7+0,c85ec7+47,a849a3+100;Pink+3D+%233 */
+        /* Establece un fondo degradado utilizando la propiedad background */
+    background: #e570e7; /* Old browsers */
+    background: -moz-linear-gradient(top, #e570e7 0%, #c85ec7 47%, #a849a3 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #e570e7 0%,#c85ec7 47%,#a849a3 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #e570e7 0%,#c85ec7 47%,#a849a3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#e570e7', endColorstr='#a849a3',GradientType=0 );
+      /* Repite el fondo verticalmente */
+    background-repeat: no-repeat;
+      /* Fija el fondo al documento */
+    background-attachment: fixed;
+}
+
+/* Establece el estilo para el encabezado */
+header {
+    /* Centra el contenido del encabezado */
+    text-align: center;
+      /* Agrega un espacio de 20px arriba y abajo en el encabezado */
+    padding: 20px 0;
+}
+/* Establece el estilo para el contenedor principal */
+.contenedor {
+    /* Centra el contenedor en la página */
+    margin: 0 auto;
+    margin: 0 auto;
+    /* Establece el ancho del contenedor a 800px */
+    width: 800px;
+    
+}
+
+/* Establece el estilo para la imagen dentro del elemento div con clase hero */
+div.hero img{
+     /* Hace que la imagen ocupe el 100% del ancho disponible */
+width: 100%;
+
+
+}
+/* Establece el estilo para los títulos h2 */
+h2 {
+ /* Centra el título */
+    text-align: center;
+     /* Establece el color del texto en blanco */
+    color: white;
+      /* Transforma el texto a mayúsculas */
+    text-transform: uppercase;
+       /* Agrega un margen de 30px arriba y abajo al título */
+    margin: 30px 0;
+}
+/* Establece el estilo para la lista de productos */
+ul.lista-productos {
+  /* Elimina el estilo de viñetas de la lista */
+list-style: none;
+   /* Elimina el margen y el relleno predeterminado */
+margin: 0;
+padding: 0;
+}
+/* Establece el estilo para cada elemento de la lista de productos */
+ul.lista-productos li {
+  /* Hace que los elementos floten a la izquierda */
+float: left;
+ /* Establece el ancho de cada elemento al 50% del ancho disponible */
+width: 50%;
+   /* Centra el contenido del elemento */
+text-align: center;
+  /* Agrega un relleno de 20px alrededor del elemento */
+padding: 20px;
+
+}
+
+
+/* Establece el estilo para los elementos impares de la lista de productos */
+ul.lista-productos li:nth-child(2n+1) {
+  /* Limpia el flotado de los elementos impares */
+clear: both;
+
+}
+
+/* Establece el estilo para las imágenes dentro de los elementos de la lista de productos */
+ul.lista-productos li img {
+  /* Agrega un borde de 10px sólido con un color */
+    border: 10px solid rgba(128,1,195,45);
+}
+/* Establece el estilo para las imágenes al clicar dentro de los elementos de la lista de productos */
+
+ul.lista-productos li img:hover {
+ /* Agrega un borde de 10px sólido con un color al clicar */
+    border: 10px solid rgba(128,1,195,1);
+}
+
+
+/* Establece el estilo para los párrafos dentro de los elementos de la lista de productos */
+ul.lista-productos li p {
+
+        /* Establece el tamaño de fuente en 28px */
+font-size: 28px;
+   /* Establece el peso de la fuente en negrita */
+font-weight: bold;
+  /* Establece el color del texto en blanco */
+color: white;
+    /* Agrega un margen superior de 10px al párrafo */
+margin-top: 10px;
+}
+
+/* Establece el estilo para los elementos span dentro de los párrafos de los elementos de la lista de productos */
+ul.lista-productos li p span {
+
+  /* Establece el tamaño de fuente en 40px */
+    font-size: 40px;
+      /* Establece el color del texto en amarillo */
+    color: yellow;
+}
+/* Establece el estilo para el botón */
+.boton {
+      /* Establece el color de fondo en amarillo */
+background-color: yellow;
+  /* Agrega un relleno de 10px en la parte superior e inferior y 40px en los lados */
+padding: 10px 40px;
+  /* Establece el elemento como un bloque en línea */
+display: inline-block;
+ /* Elimina la decoración de subrayado del texto */
+text-decoration: none;
+   /* Establece el peso de la fuente en negrita */
+font-weight: bold;
+ /* Transforma el texto a mayúsculas */
+text-transform: uppercase;
+  /* Establece el color del texto con una opacidad de 0.8 */
+color: rgba(128,1,195,.8);
+    /* Establece el tamaño de fuente en 18px */
+font-size: 18px;
+}
+/* Establece el estilo para el botón cuando se pasa el cursor sobre él */
+.boton:hover {
+   /* Cambia el color del texto a una opacidad de 1 */
+    color: rgba(128,1,195,1);
+
+}
+
+

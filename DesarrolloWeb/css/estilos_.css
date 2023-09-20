@@ -1,0 +1,111 @@
+/* Font Family */
+/* Font Size */
+/* Font Style */
+/* Text Transform */
+/* Font Variant */
+/* Text Decoration */
+
+body {
+  font-family: Arial, Helvetica, serif;
+}
+
+
+/*Esto establece la fuente para todo el documento a Arial, Helvetica, o serif.*/
+
+
+h2 {
+  font-family: Verdana, Geneva, sans-serif;
+  font-size: 30px;
+  font-style: italic;
+  font-weight: normal;
+  text-align: center;
+  letter-spacing: 2px;
+}
+
+
+/*Esto establece la fuente para todos los elementos <h2> a Verdana, Geneva, o sans-serif. También establece el tamaño de fuente a 30px y el estilo de fuente a italic.*/
+
+
+h3 {
+  font-family: 'Times New Roman', serif;
+  font-size: 20px;
+  font-variant: small-caps;
+  text-align: right;
+}
+
+
+/*Esto establece la fuente para todos los elementos <h3> a Times New Roman, serif. También establece el tamaño de fuente a 20px y la variante de fuente a small-caps.*/
+
+
+p {
+  font-family: Geneva, Helvetica, sans-serif;
+  font-size: small;
+  line-height:40px ;
+}
+
+
+/*Esto establece la fuente para todos los elementos <p> a Geneva, Helvetica, o sans-serif. También establece el tamaño de fuente a small.*/
+
+
+a {
+  font-size: 14px;
+  text-transform: capitalize;
+  text-decoration: none;
+}
+
+
+/*Esto establece el tamaño de fuente para todos los elementos <a> a 14px. También pone en mayúscula la primera letra de cada palabra y quita el subrayado de los enlaces.*/
+
+
+#listado-cursos li {
+
+  font-style: normal;
+  text-decoration: underline;
+
+}
+
+
+/*Esto establece el estilo de fuente para todos los elementos <li> dentro del elemento con el ID "listado-cursos" a normal. También subraya el texto.*/
+
+
+
+/** BACKGROUNDS**/
+
+body {
+  background: gray;
+}
+.contenedor {
+  background: white;
+}
+header {
+  background: orange
+}
+nav {
+  background: purple;
+}
+table {
+  background: cyan;
+}
+footer {
+  background: orange;
+}
+footer nav {
+  background: transparent;
+}
+/** Anchos y Altos **/
+.contenedor {
+  width: 1000px;
+}
+nav {
+  height:80px;
+}
+table {
+  width:300px;
+}
+img.logocss3 {
+  width: 90px;
+}
+
+table {
+  width: 40%;
+}
