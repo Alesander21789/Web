@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html class="no-js" lang="">
+<head>
+  <meta charset="utf-8"/>
+  <title></title>
+  <meta name="description" content=""/>
+  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+
+  <meta property="og:title" content=""/>
+  <meta property="og:type" content=""/>
+  <meta property="og:url" content=""/>
+  <meta property="og:image" content=""/>
+
+
+
+  <link rel="stylesheet" href="css/normalize.css"/>
+  <link rel="stylesheet" href="css/all.css"/>
+  <link rel="stylesheet" href="css/style.css"/>
+
+  <meta name="theme-color" content="#fafafa"/>
+</head>
+
+
+<body>
+<!-- Add your site or application content here -->
+<header class="site-header">
+  <div class="hero">
+    <div class="contendido-header">
+      <nav class="redes-sociales">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </nav>
+      <div class="informacion-evento">
+        <div class="clearfix">
+          <p class="fecha">
+            <i class="fa-solid fa-calendar"></i>&nbsp;18/09/2023
+          </p>
+          <p class="ciudad">
+            <i class="fa-solid fa-location-dot"></i>&nbsp;Fene, Spain
+          </p>
+        </div>
+        <h1 class="nombre-sitio">WeCam</h1>
+        <p class="slogan">
+          La mejor conferencia de <span>diseño web</span>
+        </p>
+      </div>
+
+      <!-- informacion-evento -->
+    </div>
+    <!-- contendido-header -->
+  </div>
+  <!-- hero -->
+</header>
+<div class="barra clearfix">
+  <div class="contenedor clearfix">
+    <div class="logo">
+      <img src="img/logo.svg" alt="logo">
+    </div>
+    <div class="menu-movil">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+    <nav class="navegacion-principal clearfix">
+      <a href="#">Conferencia</a>
+      <a href="#">Calendario</a>
+      <a href="#">Invitados</a>
+      <a href="registro.html">Reservas</a>
+    </nav>
+  </div><!-- contenedor -->
+</div><!-- barra -->
+
+<section class="seccion contenedor">
+  <h2> Registro de usuarios</h2>
+  <form id="registro" class="registro" action="index.html" method="post">
+<div id="datos_usuario" class="registro caja clearfix">
+<div class="campo">
+
+<label for="nombre">Nombre:</label>
+<input type="text" name="nombre" value="" id="nombre" placeholder="Escribe tu nombre">
+
+
+</div><!-- campo -->
+
+<div class="campo">
+
+<label for="nombre">Apellido:</label>
+<input type="text" name="apellido" value="" id="apellido" placeholder="Escribe tu apellido">
+
+
+</div><!-- campo -->
+
+<div class="campo">
+
+<label for="nombre">Email:</label>
+<input type="email" name="email" value="" id="email" placeholder="Escribe tu correo">
+
+
+
+</div><!-- campo -->
+
+<div class="error" id="error">
+
+</div><!-- error -->
+</div><!-- registro caja -->
+<div class="paquetes" id="paquetes">
+  <h3>Elige el número de boletos</h3>
+
+      <ul class="lista-precios clearfix">
+        <li>
+          <div class="tabla-precio">
+            <h3>Pase por día (Viernes)</h3>
+            <p class="numero">30</p>
+            <ul>
+              <li>Bocadillos gratis</li>
+              <li>Todas las conferencias</li>
+              <li>Todos los talleres</li>
+            </ul>
+        <div class="orden">
+
+          <label for="pase_dia">Boletos deseados</label>
+          <input type="number" name="pase_dia" value="0" id="pase_dia" min="0" >
+
+          </form>
+          </div><!-- orden -->
+        </li>
+        <li>
+          <div class="tabla-precio">
+            <h3>Todos los días</h3>
+            <p class="numero">50</p>
+            <ul>
+              <li>Bocadillos gratis</li>
+              <li>Todas las conferencias</li>
+              <li>Todos los talleres</li>
+            </ul>
+            <div class="orden">
+
+              <label for="pase_completo">Boletos deseados</label>
+              <input type="number" name="pase_completo" value="0" id="pase_completo" min="0" >
+
+              </form>
+              </div><!-- orden -->
+          </div>
+        </li>
+        <li>
+          <div class="tabla-precio">
+            <h3>Pase por dos días</h3>
+            <p class="numero">45</p>
+            <ul>
+              <li>Bocadillos gratis</li>
+              <li>Todas las conferencias</li>
+              <li>Todos los talleres</li>
+            </ul>
+            <div class="orden">
+
+              <label for="pase_dos_dias">Boletos deseados</label>
+              <input type="number" name="pase_dos_dias" value="0" id="pase_dos_dias" min="0" >
+
+              </form>
+              </div><!-- orden -->
+          </div>
+        </li>
+      </ul>
+
+<div
+
+
+
+</div><!-- paquetes -->
+
+<div class="eventos clearfix" id="eventos">
+
+  <h3>Elige tus talleres</h3>
+  <div class="caja">
+    <div class="contenido-dia clearfix" id="viernes">
+      <h4>Viernes</h4>
+      <div class="talleres">
+        <p>Talleres:</p>
+        <label><input type="checkbox" name="registro" value="" id="taller_01"><time>10:00</time></label>
+          <label><input type="checkbox" name="registro" value="" id="taller_02"><time>12:00</time></label>
+            <label><input type="checkbox" name="registro" value="" id="taller_03"><time>14:00</time></label>
+              <label><input type="checkbox" name="registro" value="" id="taller_04"><time>17:00</time></label>
+                <label><input type="checkbox" name="registro" value="" id="taller_05"><time>19:00</time></label>
+      </div><!--talleres-->
+      <div class="conferencias">
+        <p>Conferencias</p>
+        <label><input type="checkbox" name="registro" value="" id="conf_01"><time>10:00</time></label>
+          <label><input type="checkbox" name="registro" value="" id="conf_02"><time>12:00</time></label>
+            <label><input type="checkbox" name="registro" value="" id="conf_03"><time>14:00</time></label>
+              <label><input type="checkbox" name="registro" value="" id="conf_04"><time>17:00</time></label>
+                <label><input type="checkbox" name="registro" value="" id="conf_05"><time>19:00</time></label>
+
+
+      </div>
+      <div class="seminarios">
+        <p>Seminarios</p>
+        <label><input type="checkbox" name="registro" value="" id="sem_01"><time>10:00</time></label>
+          <label><input type="checkbox" name="registro" value="" id="sem_02"><time>12:00</time></label>
+            <label><input type="checkbox" name="registro" value="" id="sem_03"><time>14:00</time></label>
+              <label><input type="checkbox" name="registro" value="" id="sem_04"><time>17:00</time></label>
+                <label><input type="checkbox" name="registro" value="" id="sem_05"><time>19:00</time></label>
+
+
+      </div>
+
+    </div><!-- viernes -->
+
+    <div class="sabado clearfix contenido-dia" id="sabado">
+      <h4>Sabado</h4>
+      <div class="talleres">
+        <p>Talleres:</p>
+        <label><input type="checkbox" name="registro" value="" id="taller_01"><time>10:00</time></label>
+          <label><input type="checkbox" name="registro" value="" id="taller_02"><time>12:00</time></label>
+            <label><input type="checkbox" name="registro" value="" id="taller_03"><time>14:00</time></label>
+              <label><input type="checkbox" name="registro" value="" id="taller_04"><time>17:00</time></label>
+                <label><input type="checkbox" name="registro" value="" id="taller_05"><time>19:00</time></label>
+      </div><!--talleres-->
+      <div class="conferencias">
+        <p>Conferencias</p>
+        <label><input type="checkbox" name="registro" value="" id="conf_01"><time>10:00</time></label>
+          <label><input type="checkbox" name="registro" value="" id="conf_02"><time>12:00</time></label>
+            <label><input type="checkbox" name="registro" value="" id="conf_03"><time>14:00</time></label>
+              <label><input type="checkbox" name="registro" value="" id="conf_04"><time>17:00</time></label>
+                <label><input type="checkbox" name="registro" value="" id="conf_05"><time>19:00</time></label>
+
+
+      </div>
+      <div class="seminarios">
+        <p>Seminarios</p>
+        <label><input type="checkbox" name="registro" value="" id="sem_01"><time>10:00</time></label>
+          <label><input type="checkbox" name="registro" value="" id="sem_02"><time>12:00</time></label>
+            <label><input type="checkbox" name="registro" value="" id="sem_03"><time>14:00</time></label>
+              <label><input type="checkbox" name="registro" value="" id="sem_04"><time>17:00</time></label>
+                <label><input type="checkbox" name="registro" value="" id="sem_05"><time>19:00</time></label>
+
+
+      </div>
+
+    </div><!-- sabado -->
+
+
+
+  </div><!--caja -->
+
+</div><!--eventos-->
+
+
+
+<div class="resumen">
+    <h3>Pagos y Extras</h3>
+    <div class="caja clearfix">
+        <div class="extras">
+            <div class="orden">
+                <label for="camisa_evento">Camisas del evento 10$ <small> (promocion 7% dcto)</small></label>
+                <input type="number" id="camisa_evento"  min="0" placeholder="0">
+            </div>
+            <div class="orden">
+                <label for="etiquetas">Paquete de etiquetas por 2$ <small> (HTML, CSS, Javascript)</small></label>                        </label>
+                <input type="number" id="etiquetas" size="3" min="0" placeholder="0">
+            </div>
+            <div class="orden">
+                <label for="regalo">Seleccione un regalo</label>
+                <select required name="regalo" id="regalo">
+                    <option value="">Seleccione</option>
+                    <option value="ETI">Etiqueta</option>
+                    <option value="PUL">Pulsera</option>
+                    <option value="PLU">Pluma</option>
+                </select>
+            </div>
+
+            <input type="button" value="calcular" class="buton" id="calcular">
+        </div> <!--extras-->
+
+        <div class="total">
+            <p>Resumen:</p>
+            <div id="lista-productos" class='lista-productos'></div>
+
+            <p>Total:</p>
+            <div id="suma-total"></div>
+
+            <input type="submit" id="btnRegistro" class="buton" value="Pagar">
+        </div>
+    </div>
+</div>
+
+</form>
+
+
+
+  </form><!-- registro -->
+
+  </section><!-- seccion contenedor -->
+
+<footer class="site-footer">
+  <div class="contenedor clearfix">
+
+    <div class="footer-informacion">
+      <h3>Sobre <span>gdlwebcamp</span></h3>
+      <p>lorem</p>
+    </div><!-- footer-informacion -->
+    <div class="ultimos-tweets">
+      <h3>Últimos <span>tweets</span></h3>
+      <ul>
+        <li>lorem</li>
+        <li>lorem</li>
+        <li>lorem</li>
+      </ul>
+    </div><!-- ultimos-tweets -->
+    <div class="menu">
+      <h3>Redes <span>sociales</span></h3>
+      <nav class="redes-sociales">
+        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+        <a href="#"><i class="fa-brands fa-x-twitter"></i></a>
+        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+        <a href="#"><i class="fa-brands fa-youtube"></i></a>
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </nav>
+    </div><!-- menu -->
+
+  </div><!-- contenedor -->
+  <p class="copyraight">
+    Todos los derechos reservados
+  </p>
+
+</footer>
+
+
+<script src="js/main.js"></script>
+</body>
+</html>
